@@ -1,25 +1,64 @@
-# CakePHP 3
+# Ignore configuration files that may contain sensitive information
+.env
+.env.local
+.env.*.local
+*.env
 
-/vendor/*
-/config/app.php
+# Ignore directories for dependency managers
+/vendor/
 
-/tmp/cache/models/*
-!/tmp/cache/models/empty
-/tmp/cache/persistent/*
-!/tmp/cache/persistent/empty
-/tmp/cache/views/*
-!/tmp/cache/views/empty
-/tmp/sessions/*
-!/tmp/sessions/empty
-/tmp/tests/*
-!/tmp/tests/empty
+# Ignore system and IDE files
+.DS_Store
+Thumbs.db
 
-/logs/*
-!/logs/empty
+# Ignore temporary files
+*.tmp
+*.log
+*.cache
+*.gz
+*.zip
+*.tar
+*.rar
+*.7z
+*.swp
+*.swo
 
-# CakePHP 2
+# Ignore compiled CSS/JS files if you are using preprocessors
+*.sass-cache/
+*.scss-cache/
+*.css.map
+*.js.map
 
-/app/tmp/*
-/app/Config/core.php
-/app/Config/database.php
-/vendors/*
+# Ignore node_modules if you are using npm
+/node_modules/
+
+# Ignore composer vendor directory
+/vendor/
+
+# Ignore IDE-specific directories and files
+.idea/
+.vscode/
+*.code-workspace
+
+# Ignore PHPUnit result log
+phpunit.xml
+
+# Ignore backup files created by editors
+*~
+*.bak
+*.backup
+*.old
+*.orig
+*.save
+
+# Ignore SQL dump files (optional, if you generate these)
+*.sql
+*.sql.gz
+
+# Ignore logs and error files
+error_log
+logs/
+
+# Ignore local server configuration files
+.htaccess
+.htpasswd
