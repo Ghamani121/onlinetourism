@@ -6,7 +6,7 @@ include('includes/config.php');
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>TMS  | Package List</title>
+<title>Package List</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <script type="applijewelleryion/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
@@ -32,7 +32,7 @@ include('includes/config.php');
 <!--- banner ---->
 <div class="banner-3">
 	<div class="container">
-		<h1 class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;"> TMS- Package List</h1>
+		<h1 class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;"></h1>
 	</div>
 </div>
 <!--- /banner ---->
@@ -40,7 +40,7 @@ include('includes/config.php');
 <div class="rooms">
 	<div class="container">
 		
-		<div class="room-bottom">
+		<div class="room-bottom" style="text-align: center;">
 			<h3>Package List</h3>
 
 					

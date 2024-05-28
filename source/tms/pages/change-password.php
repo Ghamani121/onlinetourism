@@ -36,7 +36,7 @@ $error="Your current password is wrong";
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>TMS | Tourism Management System</title>
+<title>Tourism Management System</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Tourism Management System In PHP" />
@@ -110,7 +110,7 @@ return true;
 	</p> 
 
 <p style="width: 350px;">
-<b>New  Password</b>
+<b>New Password</b>
 <input type="password" class="form-control" name="newpassword" id="newpassword" placeholder="New Password" required="">
 </p>
 

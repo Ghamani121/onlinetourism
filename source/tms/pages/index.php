@@ -6,7 +6,7 @@ include('includes/config.php');
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>TMS | Tourism Management System</title>
+<title>Tourism Management System</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -45,7 +45,7 @@ include('includes/config.php');
 				<a href="offers.html"><i class="fa fa-usd"></i></a>
 			</div>
 			<div class="rup-rgt">
-				<h3>UP TO USD. 50 OFF</h3>
+				<h3>UPTO 50% OFF</h3>
 				<h4><a href="offers.html">TRAVEL SMART</a></h4>
 				
 			</div>
@@ -56,8 +56,8 @@ include('includes/config.php');
 				<a href="offers.html"><i class="fa fa-h-square"></i></a>
 			</div>
 			<div class="rup-rgt">
-				<h3>UP TO 70% OFF</h3>
-				<h4><a href="offers.html">ON HOTELS ACROSS WORLD</a></h4>
+				<h3>UPTO 70% OFF</h3>
+				<h4><a href="offers.html">ON HOTELS ALL ACROSS WORLD</a></h4>
 				
 			</div>
 				<div class="clearfix"></div>
@@ -67,8 +67,8 @@ include('includes/config.php');
 				<a href="offers.html"><i class="fa fa-mobile"></i></a>
 			</div>
 			<div class="rup-rgt">
-				<h3>FLAT USD. 50 OFF</h3>
-				<h4><a href="offers.html">US APP OFFER</a></h4>
+				<h3>FLAT 50% OFF</h3>
+				<h4><a href="offers.html">FOR APP USERS</a></h4>
 			
 			</div>
 				<div class="clearfix"></div>
@@ -112,7 +112,7 @@ foreach($results as $result)
 					<p><b>Features</b> <?php echo htmlentities($result->PackageFetures);?></p>
 				</div>
 				<div class="col-md-3 room-right wow fadeInRight animated" data-wow-delay=".5s">
-					<h5>USD <?php echo htmlentities($result->PackagePrice);?></h5>
+					<h5>Rs.<?php echo htmlentities($result->PackagePrice);?></h5>
 					<a href="package-details.php?pkgid=<?php echo htmlentities($result->PackageId);?>" class="view">Details</a>
 				</div>
 				<div class="clearfix"></div>
@@ -136,7 +136,7 @@ foreach($results as $result)
 				<a href="#"><i class="glyphicon glyphicon-list-alt"></i></a>
 			</div>
 			<div class="rou-rgt wow fadeInDown animated" data-wow-delay=".5s">
-				<h3>80000</h3>
+				<h3>8000</h3>
 				<p>Enquiries</p>
 			</div>
 				<div class="clearfix"></div>
@@ -147,7 +147,7 @@ foreach($results as $result)
 			</div>
 			<div class="rou-rgt">
 				<h3>1900</h3>
-				<p>Regestered users</p>
+				<p>Registered Users</p>
 			</div>
 				<div class="clearfix"></div>
 		</div>
@@ -156,8 +156,8 @@ foreach($results as $result)
 				<a href="#"><i class="fa fa-ticket"></i></a>
 			</div>
 			<div class="rou-rgt">
-				<h3>7,00,00,000+</h3>
-				<p>Booking</p>
+				<h3>70,000+</h3>
+				<p>Bookings</p>
 			</div>
 				<div class="clearfix"></div>
 		</div>
