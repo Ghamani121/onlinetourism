@@ -29,6 +29,7 @@ else{
 <!-- lined-icons -->
 <link rel="stylesheet" href="css/icon-font.min.css" type='text/css' />
 <!-- //lined-icons -->
+<style>.link-color {color: white; }</style>
 </head> 
 <body>
    <div class="page-container">
@@ -39,7 +40,7 @@ else{
 <?php include('includes/header.php');?>
 <!--header end here-->
 		<ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Home</a> <i class="fa fa-angle-right"></i></li>
+                <li class="breadcrumb-item"><a href="dashboard.php">Home</a> <i class="fa fa-angle-right"></i></li>
             </ol>
 <!--four-grids here-->
 		<div class="four-grids">
@@ -49,7 +50,7 @@ else{
 								<i class="glyphicon glyphicon-user" aria-hidden="true"></i>
 							</div>
 							<div class="four-text">
-								<h3>User</h3>
+								<h3><a class="link-color" href="manage-users.php">Users</a></h3>
 
 								<?php $sql = "SELECT id from tblusers";
 $query = $dbh -> prepare($sql);
@@ -69,7 +70,7 @@ $cnt=$query->rowCount();
 								<i class="glyphicon glyphicon-list-alt" aria-hidden="true"></i>
 							</div>
 							<div class="four-text">
-								<h3>Bookings</h3>
+							<h3><a class="link-color" href="manage-bookings.php">Bookings</a></h3>
 										<?php $sql1 = "SELECT BookingId from tblbooking";
 $query1 = $dbh -> prepare($sql1);
 $query1->execute();
@@ -88,7 +89,7 @@ $cnt1=$query1->rowCount();
 								<i class="glyphicon glyphicon-folder-open" aria-hidden="true"></i>
 							</div>
 							<div class="four-text">
-								<h3>Enquiries</h3>
+							<h3><a class="link-color" href="manage-enquires.php">Enquiries</a></h3>
 												<?php $sql2 = "SELECT id from tblenquiry";
 $query2= $dbh -> prepare($sql2);
 $query2->execute();
@@ -107,7 +108,7 @@ $cnt2=$query2->rowCount();
 								<i class="glyphicon glyphicon-briefcase" aria-hidden="true"></i>
 							</div>
 							<div class="four-text">
-								<h3>Toatal packages</h3>
+							<h3><a class="link-color" href="manage-pages.php">Pages</a></h3>
 																	<?php $sql3 = "SELECT PackageId from tbltourpackages";
 $query3= $dbh -> prepare($sql3);
 $query3->execute();
@@ -130,7 +131,7 @@ $cnt3=$query3->rowCount();
 								<i class="glyphicon glyphicon-folder-open" aria-hidden="true"></i>
 							</div>
 							<div class="four-text">
-								<h3>Issues Riaised</h3>
+								<h3><a class="link-color" href="manageissues.php">Issues Raised</a></h3>
 												<?php $sql5 = "SELECT id from tblissues";
 $query5= $dbh -> prepare($sql5);
 $query5->execute();

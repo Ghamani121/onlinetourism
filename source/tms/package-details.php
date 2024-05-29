@@ -34,7 +34,7 @@ $error="Something went wrong. Please try again";
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>TMS | Package Details</title>
+<title>Package Details</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <script type="applijewelleryion/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
@@ -77,14 +77,14 @@ $error="Something went wrong. Please try again";
     -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
     box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
 }
-		</style>				
+</style>				
 </head>
 <body>
 <!-- top-header -->
 <?php include('includes/header.php');?>
 <div class="banner-3">
 	<div class="container">
-		<h1 class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;"> TMS -Package Details</h1>
+		<h1 class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;"></h1>
 	</div>
 </div>
 <!--- /banner ---->
@@ -113,28 +113,37 @@ foreach($results as $result)
 			</div>
 			<div class="col-md-8 selectroom_right wow fadeInRight animated" data-wow-delay=".5s">
 				<h2><?php echo htmlentities($result->PackageName);?></h2>
-				<p class="dow">#PKG-<?php echo htmlentities($result->PackageId);?></p>
+				<p class="dow">Package-<?php echo htmlentities($result->PackageId);?></p>
 				<p><b>Package Type :</b> <?php echo htmlentities($result->PackageType);?></p>
 				<p><b>Package Location :</b> <?php echo htmlentities($result->PackageLocation);?></p>
-					<p><b>Features</b> <?php echo htmlentities($result->PackageFetures);?></p>
+					<p><b>Features :</b> <?php echo htmlentities($result->PackageFetures);?></p>
 					<div class="ban-bottom">
 				<div class="bnr-right">
-				<label class="inputLabel">From</label>
-				<input class="date" id="datepicker" type="text" placeholder="dd-mm-yyyy"  name="fromdate" required="">
+				<label class="inputLabel">From :
+				</label><input class="date" id="datepicker" type="text" placeholder="dd-mm-yyyy"  name="fromdate" required="">
 			</div>
 			<div class="bnr-right">
-				<label class="inputLabel">To</label>
+				<label class="inputLabel">To :</label>
 				<input class="date" id="datepicker1" type="text" placeholder="dd-mm-yyyy" name="todate" required="">
 			</div>
 			</div>
 						<div class="clearfix"></div>
 				<div class="grand">
-					<p>Grand Total</p>
-					<h3>USD.800</h3>
+					<p>Total</p>
+					<h3>Rs.8000</h3>
 				</div>
 			</div>
 		<h3>Package Details</h3>
-				<p style="padding-top: 1%"><?php echo htmlentities($result->PackageDetails);?> </p>	
+				<p style="padding-top: 1%"><?php echo htmlentities($result->PackageDetails);?></p>	
+				<!-- <?php if($_SESSION['login'])
+					{?>
+						<li class="spe" align="center">
+					<button type="submit" name="submit2" class="btn-primary btn">Book</button>
+						</li>
+						<?php } else {?>
+							<li class="sigi" align="center" style="margin-top: 1%">
+							<a href="#" data-toggle="modal" data-target="#myModal4" class="btn-primary btn" > Book</a></li>
+							<?php } ?> -->
 				<div class="clearfix"></div>
 		</div>
 		<div class="selectroom_top">
@@ -143,7 +152,7 @@ foreach($results as $result)
 				<ul>
 				
 					<li class="spe">
-						<label class="inputLabel">Comment</label>
+						<label class="inputLabel"  style="color:#334354">Comment</label>
 						<input class="special" type="text" name="comment" required="">
 					</li>
 					<?php if($_SESSION['login'])

@@ -6,7 +6,7 @@ include('includes/config.php');
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>TMS  | Package List</title>
+<title>Package List</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <script type="applijewelleryion/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
@@ -32,7 +32,7 @@ include('includes/config.php');
 <!--- banner ---->
 <div class="banner-3">
 	<div class="container">
-		<h1 class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;"> TMS- Package List</h1>
+		<h1 class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;"></h1>
 	</div>
 </div>
 <!--- /banner ---->
@@ -64,13 +64,26 @@ foreach($results as $result)
 					<p><b>Features</b> <?php echo htmlentities($result->PackageFetures);?></p>
 				</div>
 				<div class="col-md-3 room-right wow fadeInRight animated" data-wow-delay=".5s">
-					<h5>USD <?php echo htmlentities($result->PackagePrice);?></h5>
-					<a href="package-details.php?pkgid=<?php echo htmlentities($result->PackageId);?>" class="view">Details</a>
+					<h5>Rs.<?php echo htmlentities($result->PackagePrice);?></h5>
+					<!-- <a href="package-details.php?pkgid=<?php echo htmlentities($result->PackageId);?>" class="view">Details</a> -->
+					<?php
+            // Check the package ID and set the link accordingly
+            if ($result->PackageId == 3) {
+                echo '<a href="https://www.trivago.in/en-IN/srl/hotels-malaysia?search=200-120;dr-20240609-20240610;rc-2-2-6-6" class="view">Details</a>';
+            } elseif ($result->PackageId == 2) {
+                echo '<a href="https://www.cleartrip.com/hotels/details/snow-valley-resorts-spa-manali-3940369?c=03072024|04072024&city=Manali&state=Himachal%20Pradesh&country=IN&r=2,0" class="view">Details</a>';
+            } elseif ($result->PackageId == 5) {
+                echo '<a href="https://therosewoodhotel.com/suite-balcony/" class="view">Details</a>';
+            } else {
+                echo '<a href="package-details.php?pkgid=' . htmlentities($result->PackageId) . '" class="view">Details</a>';
+            }
+            ?>
 				</div>
 				<div class="clearfix"></div>
 			</div>
 
 <?php }} ?>
+
 			
 		
 		
