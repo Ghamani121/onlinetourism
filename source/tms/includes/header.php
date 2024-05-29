@@ -24,7 +24,7 @@
 				<li class="hm"><a href="admin/index.php">Admin Login</a></li>
 		</ul>
 		<ul class="tp-hd-rgt wow fadeInRight animated" data-wow-delay=".5s"> 
-			<li class="tol">Toll Number : 123-4568790</li>				
+			<!-- <li class="tol">Toll Number : 123-4568790</li>				 -->
 			<li class="sig"><a href="#" data-toggle="modal" data-target="#myModal" >Sign Up</a></li> 
 			<li class="sigi"><a href="#" data-toggle="modal" data-target="#myModal4" >/ Sign In</a></li>
         </ul>
@@ -69,7 +69,7 @@
 						<ul class="nav navbar-nav">
 							<li><a href="index.php">Home</a></li>
 							<li><a href="page.php?type=aboutus">About</a></li>
-								<li><a href="package-list.php">Tour Packages</a></li>
+								<li><a href="package-list.php">Packages</a></li>
 								<li><a href="page.php?type=privacy">Privacy Policy</a></li>
 								<li><a href="page.php?type=terms">Terms of Use</a></li>
 								<li><a href="page.php?type=contact">Contact Us</a></li>

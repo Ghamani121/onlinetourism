@@ -77,7 +77,7 @@ $error="Something went wrong. Please try again";
     -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
     box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
 }
-		</style>				
+</style>				
 </head>
 <body>
 <!-- top-header -->
@@ -135,7 +135,7 @@ foreach($results as $result)
 			</div>
 		<h3>Package Details</h3>
 				<p style="padding-top: 1%"><?php echo htmlentities($result->PackageDetails);?></p>	
-				<?php if($_SESSION['login'])
+				<!-- <?php if($_SESSION['login'])
 					{?>
 						<li class="spe" align="center">
 					<button type="submit" name="submit2" class="btn-primary btn">Book</button>
@@ -143,16 +143,16 @@ foreach($results as $result)
 						<?php } else {?>
 							<li class="sigi" align="center" style="margin-top: 1%">
 							<a href="#" data-toggle="modal" data-target="#myModal4" class="btn-primary btn" > Book</a></li>
-							<?php } ?>
+							<?php } ?> -->
 				<div class="clearfix"></div>
 		</div>
-		<!-- <div class="selectroom_top">
+		<div class="selectroom_top">
 			<h2>Travels</h2>
 			<div class="selectroom-info animated wow fadeInUp animated" data-wow-duration="1200ms" data-wow-delay="500ms" style="visibility: visible; animation-duration: 1200ms; animation-delay: 500ms; animation-name: fadeInUp; margin-top: -70px">
 				<ul>
 				
 					<li class="spe">
-						<label class="inputLabel"  style="color:#334354">Provide information about additional requirements</label>
+						<label class="inputLabel"  style="color:#334354">Comment</label>
 						<input class="special" type="text" name="comment" required="">
 					</li>
 					<?php if($_SESSION['login'])
@@ -168,7 +168,7 @@ foreach($results as $result)
 				</ul>
 			</div>
 			
-		</div> -->
+		</div>
 		</form>
 <?php }} ?>
 

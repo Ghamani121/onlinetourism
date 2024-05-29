@@ -107,7 +107,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 				</div>
 <!--heder end here-->
 	<ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Home</a><i class="fa fa-angle-right"></i>Update Page Data </li>
+                <li class="breadcrumb-item"><a href="dashboard.php">Home</a><i class="fa fa-angle-right"></i>Update Page Data </li>
             </ol>
 		<!--grid-->
  	<div class="grid-form">
@@ -124,11 +124,11 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 									<label for="focusedinput" class="col-sm-2 control-label">Select page</label>
 									<div class="col-sm-8">
 									   <select name="menu1" onChange="MM_jumpMenu('parent',this,0)">
-                  <option value="" selected="selected" class="form-control">***Select One***</option>
-                  <option value="manage-pages.php?type=terms">terms and condition</option>
-                  <option value="manage-pages.php?type=privacy">privacy and policy</option>
-                  <option value="manage-pages.php?type=aboutus">aboutus</option> 
-                  <option value="manage-pages.php?type=contact">Contact us</option>
+                  <option value="" selected="selected" class="form-control">Select One</option>
+                  <option value="manage-pages.php?type=terms">Terms and Conditions</option>
+                  <option value="manage-pages.php?type=privacy">Privacy and Policy</option>
+                  <option value="manage-pages.php?type=aboutus">About Us</option> 
+                  <option value="manage-pages.php?type=contact">Contact Us</option>
                 </select>
 									</div>
 								</div>

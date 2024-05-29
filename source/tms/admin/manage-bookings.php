@@ -116,7 +116,7 @@ $msg="Booking Confirm successfully";
 				</div>
 <!--heder end here-->
 <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Home</a><i class="fa fa-angle-right"></i>Manage Bookings</li>
+                <li class="breadcrumb-item"><a href="dashboard.php">Home</a><i class="fa fa-angle-right"></i>Manage Bookings</li>
             </ol>
 <div class="agile-grids">	
 				<!-- tables -->
@@ -157,7 +157,8 @@ foreach($results as $result)
 							<td><a href="update-package.php?pid=<?php echo htmlentities($result->pid);?>"><?php echo htmlentities($result->pckname);?></a></td>
 							<td><?php echo htmlentities($result->fdate);?> To <?php echo htmlentities($result->tdate);?></td>
 								<td><?php echo htmlentities($result->comment);?></td>
-								<td><?php if($result->status==0)
+								<td><?php 
+if($result->status==0)
 {
 echo "Pending";
 }
@@ -165,23 +166,30 @@ if($result->status==1)
 {
 echo "Confirmed";
 }
-if($result->status==2 and  $result->cancelby=='a')
+if($result->status==2)
 {
-echo "Canceled by you at " .$result->upddate;
-} 
-if($result->status==2 and $result->cancelby=='u')
-{
-echo "Canceled by User at " .$result->upddate;
-
+echo "Cancelled";
 }
+// if($result->status==2 and  $result->cancelby=='admin')
+// {
+// echo "Canceled by you at " .$result->upddate;
+// } 
+// if($result->status==2 and $result->cancelby=='u')
+// {
+// echo "Canceled by User at " .$result->upddate;
+
+// }
 ?></td>
 
-<?php if($result->status==2)
+<?php if($result->status==0)
 {
-	?><td>Cancelled</td>
-<?php } else {?>
-<td><a href="manage-bookings.php?bkid=<?php echo htmlentities($result->bookid);?>" onclick="return confirm('Do you really want to cancel booking')" >Cancel</a> / <a href="manage-bookings.php?bckid=<?php echo htmlentities($result->bookid);?>" onclick="return confirm('Do you really want to cancel booking')" >Confirm</a></td>
-<?php }?>
+	?><td><a href="manage-bookings.php?bkid=<?php echo htmlentities($result->bookid);?>" onclick="return confirm('Do you really want to cancel booking')" >Cancel</a> / <a href="manage-bookings.php?bckid=<?php echo htmlentities($result->bookid);?>" onclick="return confirm('Do you really want to confirm booking')" >Confirm</a></td><?php 
+	
+} 
+else 
+{
+	?><td>Checked</td><?php 
+}?>
 
 						  </tr>
 						 <?php $cnt=$cnt+1;} }?>
