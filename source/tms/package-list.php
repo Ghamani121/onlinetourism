@@ -68,11 +68,11 @@ foreach($results as $result)
 					<!-- <a href="package-details.php?pkgid=<?php echo htmlentities($result->PackageId);?>" class="view">Details</a> -->
 					<?php
             // Check the package ID and set the link accordingly
-            if ($result->PackageId == 3) {
+            if ($result->PackageId == 2) {
                 echo '<a href="https://www.trivago.in/en-IN/srl/hotels-malaysia?search=200-120;dr-20240609-20240610;rc-2-2-6-6" class="view">Details</a>';
-            } elseif ($result->PackageId == 2) {
+            } elseif ($result->PackageId == 1) {
                 echo '<a href="https://www.cleartrip.com/hotels/details/snow-valley-resorts-spa-manali-3940369?c=03072024|04072024&city=Manali&state=Himachal%20Pradesh&country=IN&r=2,0" class="view">Details</a>';
-            } elseif ($result->PackageId == 5) {
+            } elseif ($result->PackageId == 3) {
                 echo '<a href="https://therosewoodhotel.com/suite-balcony/" class="view">Details</a>';
             } else {
                 echo '<a href="package-details.php?pkgid=' . htmlentities($result->PackageId) . '" class="view">Details</a>';
