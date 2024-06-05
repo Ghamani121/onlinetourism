@@ -44,6 +44,8 @@ $error="Something went wrong. Please try again";
 <link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 <link href="css/font-awesome.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
 <!-- Custom Theme files -->
 <script src="js/jquery-1.12.0.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
@@ -135,45 +137,55 @@ foreach($results as $result)
 			</div>
 		<h3>Package Details</h3>
 				<p style="padding-top: 1%"><?php echo htmlentities($result->PackageDetails);?></p>	
-				<!-- <?php if($_SESSION['login'])
-					{?>
-						<li class="spe" align="center">
-					<button type="submit" name="submit2" class="btn-primary btn">Book</button>
-						</li>
-						<?php } else {?>
-							<li class="sigi" align="center" style="margin-top: 1%">
-							<a href="#" data-toggle="modal" data-target="#myModal4" class="btn-primary btn" > Book</a></li>
-							<?php } ?> -->
+				<div class="rupes">
+		<div class="col-md-4 rupes-left wow fadeInDown animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInDown;">
+			<div class="rup-left">
+				<a href=""><i class="fas fa-graduation-cap fa-4x"></i></a>
+			</div>
+			<div class="rup-rgt">
+				<h3>UPTO 20% OFF</h3>
+				<h4><a href="">Avail Student Offer</a></h4>
+				
+			</div>
 				<div class="clearfix"></div>
 		</div>
-		<div class="selectroom_top">
-			<h2>Travels</h2>
-			<div class="selectroom-info animated wow fadeInUp animated" data-wow-duration="1200ms" data-wow-delay="500ms" style="visibility: visible; animation-duration: 1200ms; animation-delay: 500ms; animation-name: fadeInUp; margin-top: -70px">
-				<ul>
-				
-					<li class="spe">
-						<label class="inputLabel"  style="color:#334354">Comment</label>
-						<input class="special" type="text" name="comment" required="">
-					</li>
-					<?php if($_SESSION['login'])
-					{?>
-						<li class="spe" align="center">
-					<button type="submit" name="submit2" class="btn-primary btn">Book</button>
-						</li>
-						<?php } else {?>
-							<li class="sigi" align="center" style="margin-top: 1%">
-							<a href="#" data-toggle="modal" data-target="#myModal4" class="btn-primary btn" > Book</a></li>
-							<?php } ?>
-					<div class="clearfix"></div>
-				</ul>
+		<div class="col-md-4 rupes-left wow fadeInDown animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInDown;">
+			<div class="rup-left">
+				<a href=""><i class="fas fa-hiking fa-4x"></i></a>
 			</div>
-			
+			<div class="rup-rgt">
+				<h3>UPTO 70% OFF</h3>
+				<h4><a href="">On Packages Including Activities</a></h4>
+				
+			</div>
+				<div class="clearfix"></div>
 		</div>
-		</form>
+		<div class="col-md-4 rupes-left wow fadeInDown animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInDown;">
+			<div class="rup-left">
+				<a href=""><i class="fas fa-wallet fa-4x"></i></a>
+			</div>
+			<div class="rup-rgt">
+				<h3>FLAT 40% OFF</h3>
+				<h4><a href="">For Pacakges Above Rs.10,000</a></h4>
+			</div>	
+		</div>
+	</div>	
+		<li class="spe" style="list-style: none;">
+    				<label class="inputLabel" style="color: #; display: block; margin-bottom: 5px;">Provide details about your requirements :</label>
+    				<input class="special" type="text" name="comment" required="" style="display: block; margin: 0 auto; padding: 5px;">
+				</li>
+				<?php if($_SESSION['login']) { ?>
+    				<li class="spe" style="text-align: center; list-style: none;">
+        				<button type="submit" name="submit2" class="btn-primary btn">Book</button>
+   					</li>
+				<?php } else { ?>
+    				<li class="sigi" style="margin-top: 1%; text-align: center; list-style: none;">
+        				<a href="#" data-toggle="modal" data-target="#myModal4" class="btn-primary btn">Book</a>
+    				</li>
+				<?php } ?>
+		<div class="clearfix"></div>			
 <?php }} ?>
-
-
-	</div>
+</div>
 </div>
 <!--- /selectroom ---->
 <<!--- /footer-top ---->
