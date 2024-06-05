@@ -79,6 +79,7 @@
 								<?php } else { ?>
 								<li><a href="enquiry.php"> Enquiry </a>  </li>
 								<?php } ?>
+								<li><a href="feedback.php">Feedback</a></li>
 								<div class="clearfix"></div>
 
 						</ul>
