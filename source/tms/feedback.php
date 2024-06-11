@@ -124,8 +124,8 @@ include('includes/config.php');
                 <!-- Review Card Example 1 -->
                 <div class="review-card">
                     <div class="left">
-                        <div class="username">Anuj Kumar<?php echo $i; ?></div>
-                        <div class="package-details">Package : Manali</div>
+                        <div class="username"><a style="color:#333333" href="images/deeksh.mp4">Rishikesh Pauly</a><?php echo $i; ?></div>
+                        <div class="package-details">Package : Sri Lanka</div>
                     </div>
                     <div class="right">
                         <div class="stars">★★★★★</div>
@@ -137,8 +137,8 @@ include('includes/config.php');
                 <!-- Review Card Example 2 -->
                 <div class="review-card">
                     <div class="left">
-                        <div class="username">Sarita Singh<?php echo $i; ?></div>
-                        <div class="package-details">Package : Malaysia </div>
+                        <div class="username"><a style="color:#333333" href="images/vaish.mp4">Aarushi Prakash</a><?php echo $i; ?></div>
+                        <div class="package-details">Package : Kerala </div>
                     </div>
                     <div class="right">
                         <div class="stars">★★★★☆</div>
@@ -149,8 +149,8 @@ include('includes/config.php');
                 </div>
                 <div class="review-card">
                     <div class="left">
-                        <div class="username">Ghamani Nair<?php echo $i; ?></div>
-                        <div class="package-details">Package : Gulmarg</div>
+                        <div class="username"><a style="color:#333333" href="images/tarun.mp4">Praveen Malhotra</a><?php echo $i; ?></div>
+                        <div class="package-details">Package : Coorg</div>
                     </div>
                     <div class="right">
                         <div class="stars">★★★★☆</div>
@@ -163,7 +163,7 @@ include('includes/config.php');
                 <div class="review-card">
                     <div class="left">
                         <div class="username">Sanjana Deshpande<?php echo $i ; ?></div>
-                        <div class="package-details">Package : Kerala</div>
+                        <div class="package-details">Package : Malaysia</div>
                     </div>
                     <div class="right">
                         <div class="stars">★★★☆☆</div>
@@ -175,7 +175,7 @@ include('includes/config.php');
                 <div class="review-card">
                     <div class="left">
                         <div class="username">Jharna Gowda<?php echo $i; ?></div>
-                        <div class="package-details">Package : Coorg</div>
+                        <div class="package-details">Package : Manali</div>
                     </div>
                     <div class="right">
                         <div class="stars">★★★★☆</div>
@@ -188,7 +188,7 @@ include('includes/config.php');
                 <div class="review-card">
                     <div class="left">
                         <div class="username">David Calier<?php  ?></div>
-                        <div class="package-details">Package : Sri Lanka</div>
+                        <div class="package-details">Package : Gulmarg</div>
                     </div>
                     <div class="right">
                         <div class="stars">★★★☆☆</div>
