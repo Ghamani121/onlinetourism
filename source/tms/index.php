@@ -42,7 +42,7 @@ include('includes/config.php');
 	<div class="rupes">
 		<div class="col-md-4 rupes-left wow fadeInDown animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInDown;">
 			<div class="rup-left">
-				<a href="offers.html"><i class="fa fa-usd"></i></a>
+				<a href="offers.html"><i class="fa fa-usd " ></i></a>
 			</div>
 			<div class="rup-rgt">
 				<h3>UPTO 50% OFF</h3>
@@ -145,7 +145,7 @@ foreach($results as $result)
 	<div class="container">
 		<div class="col-md-4 routes-left wow fadeInRight animated" data-wow-delay=".5s">
 			<div class="rou-left">
-				<a href="#"><i class="glyphicon glyphicon-list-alt"></i></a>
+				<a href="#"><i class="glyphicon glyphicon-list-alt" style="font-size: 50px;"></i></a>
 			</div>
 			<div class="rou-rgt wow fadeInDown animated" data-wow-delay=".5s">
 				<h3>8000</h3>
